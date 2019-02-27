@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data_back) {
+    protected void onActivityResult(int source, int good, @Nullable Intent data_back) {
         if (data_back != null) {
             count3 = data_back.getIntExtra("count",0);
             tV1.setText("There were "+count3+ " presses");
